@@ -1,0 +1,50 @@
+<%- include("partials/header") %>
+
+<div class="container">
+   <header class="jumbotron">
+      <div class="container">
+           <h3> COVID-19 OFFICIAL TRACKER </h3>
+                <p style="color:red"> (Stay Safe Stay At Home)</p>
+                <p><strong>A CROWDSOURCED INITIATIVE </strong>  </p>
+      </div>
+    
+    </header>
+    
+
+
+    <div class="panel-body">
+      <div class="table-responsive">
+         <p style="float:right">(COMPILED FROM STATE GOVT. NUMBERS KNOW MORE)</p>
+     <table class="table table-bordered table-hover table-striped">
+      <thead class="table-danger">
+     <tr>
+     <th>ACTIVE</th>
+     <th>CONFIRMED</th>
+     <th>DEATHS</th>
+     <th>LAST UPDATE TIME</th>
+     <th>RECOVERED</th>
+     <th>STATE</th>
+     <th>STATE CODE</th>
+   </tr>
+   </thead>
+<% data["statewise"].forEach(function(covid){ %>
+   <tbody class="table-success">
+      <tr>
+        <td><%= covid["active"] %></td>
+        <td><%= covid["confirmed"] %></td>
+        <td><%= covid["deaths"] %></td>
+        <td><%= covid["lastupdatedtime"] %></td>
+        <td><%= covid["recovered"] %></td>
+        <td><%= covid["state"] %></td>
+        <td><%= covid["statecode"] %></td>
+      </tr>
+  </tbody>
+ 
+    
+<%})%>
+
+</table>
+</div>
+</div>
+</div>
+<%- include("partials/footer") %>

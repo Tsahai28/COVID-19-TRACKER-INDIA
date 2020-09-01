@@ -1,0 +1,58 @@
+
+
+
+
+
+<%- include("partials/header") %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+             <h3> COVID -19 INDIA OFFICIAL PAGE </h3>
+                  <p style="color:red"> (Stay Safe Stay At Home)</p>
+             <p>
+                  <a class="btn btn-primary btn-lg" href="/">Live Count!!!</a>
+             </p>
+        </div>
+      
+      </header>
+
+
+
+
+
+      <div class="panel-body">
+        <div class="table-responsive">
+       <table class="table table-bordered table-hover table-striped">
+        <thead class="table-danger">
+       <tr>
+     <th>Daily Confirmed</th>
+     <th>Daily Deceased</th>
+     <th>Daily Recovered</th>
+     <th>Date</th>
+     <th>Total Confirmed</th>
+     <th>Total Deceased</th>
+     <th>Total Recovered</th>
+   </tr>
+    </thead>
+<% data["cases_time_series"].forEach(function(covid){ %>
+    <tbody class="table-success">
+      <tr>
+        <td><%= covid["dailyconfirmed"] %></td>
+        <td><%= covid["dailydeceased"] %></td>
+        <td><%= covid["dailyrecovered"] %></td>
+        <td><%= covid["date"] %></td>
+        <td><%= covid["totalconfirmed"] %></td>
+        <td><%= covid["totaldeceased"] %></td>
+        <td><%= covid["totalrecovered"] %></td>
+      </tr>
+    </tbody>
+ 
+    
+<%})%>
+
+</table>
+</div>
+</div>
+</div>
+<%- include("partials/footer") %>

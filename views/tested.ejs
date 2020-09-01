@@ -1,0 +1,74 @@
+<%- include("partials/header") %>
+
+   <div class="container">
+    <header class="jumbotron">
+        <div class="container">
+             <h3> COVID -19 INDIA OFFICIAL PAGE </h3>
+                  <p style="color:red"> (Stay Safe Stay At Home)</p>
+             <p>
+                  <a class="btn btn-primary btn-lg" href="/">Live Count!!!</a>
+             </p>
+        </div>
+       
+      </header>
+
+
+
+
+
+
+   <div class="panel-body">
+    <div class="table-responsive">
+   <table class="table table-bordered table-hover table-striped">
+    <thead class="table-danger">
+   <tr>
+     <th>Daily RTPC TEST</th>
+     <th>SRT</th>
+     <th>Tested Date</th>
+     <th>Postivity Rate</th>
+     <th>TPM</th>
+     <th>Total RTPC TEST</th>
+     <th>TST</th>
+     <th>UTS</th>
+     <th>AUTHORITY LINK</th>
+   </tr>
+</thead>
+<% data["tested"].forEach(function(covid){ %>
+    <tbody class="table-success">
+      <tr>
+        <td><%= covid["dailyrtpcrtests"] %></td>
+        <td><%= covid["samplereportedtoday"] %></td>
+        <td><%= covid["testedasof"] %></td>
+        <td><%= covid["testpositivityrate"] %></td>
+        <td><%= covid["testspermillion"] %></td>
+        <td><%= covid["totalrtpcrtests"] %></td>
+        <td><%= covid["totalsamplestested"] %></td>
+        <td><%= covid["updatetimestamp"] %></td>
+        <td><a href="<%= covid["source"] %>"><strong>Source</strong></a></td>
+      </tr>
+    </tbody>
+ 
+    
+<%})%>
+
+</table>
+</div>
+</div>
+
+<div style="color: red" class="container">
+    <ul>
+    <li>PCFSR - positive cases from samples reported</li>
+    <li>SRT - samplereportedtoday</li>
+    <li>TCBPL - tests conducted by private labs</li>
+    <li>TIT - total individual stested </li>
+    <li>TPC - totalpositivecases  </li>
+    <li>TST - totalsamplestested</li>
+    <li>UTS - updatetimestamp</li>
+    <li>AUTHORITY LINK -source</li>
+ 
+    </ul>
+ 
+</div>
+</div>
+
+<%- include("partials/footer") %>

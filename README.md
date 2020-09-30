@@ -1,5 +1,5 @@
-# COVID-19-TRACKER-INDIA
-it is a web API covid-19 website.
+"COVID" and "COVID-19" redirect here. For an overview of diseases caused by coronaviruses, see Coronavirus disease. For the pandemic, see COVID-19 pandemic.
+"SARS 2" and "SARS-2" redirect here. For the virus strain that causes this disease, see Severe acute respiratory syndrome coronavirus 2.
 
 # Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
 
@@ -50,6 +50,10 @@ COVID-19 affects different people in different ways. Most infected people will d
 3. loss of speech or movement.
 4. Seek immediate medical attention if you have serious symptoms.  Always call before visiting your doctor or health facility. 
 
+
+
 People with mild symptoms who are otherwise healthy should manage their symptoms at home. 
+
+
 
 On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days. 
